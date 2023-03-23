@@ -11,12 +11,12 @@
 <form  action="thanks.php"  method="post">
     <div>
         <label  Required for="nom">Nom :</label>
-        <input  type="text"  id="nom"  name="user_name" required="required">
+        <input  type="text"  id="nom"  name="user_name" required>
     </div>
     <div>
         <div>
             <label  for="numéro TEL">Numéro TEL</label>
-            <input  type="number"  id="numero"  name="user_tel" required="required">
+            <input  type="number"  id="numero"  name="user_tel" required>
         </div>
         <div>
             <label  for="sujet">Sujet du mail</label>
@@ -28,19 +28,17 @@
             </select>
         </div>
         <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="user_email" required="required">
+        <input  type="email"  id="courriel"  name="user_email" required>
     </div>
     <div>
         <label  for="message">Message :</label>
-        <textarea  id="message"  name="user_message" required="required"></textarea>
+        <textarea  id="message"  name="user_message" required></textarea>
     </div>
     <div  class="button">
         <button  type="submit">Envoyer votre message</button>
     </div>
 </form>
-<?php
-echo  $_GET['user_name'];
-?>
+
 </body>
 </html>
 
